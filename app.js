@@ -102,6 +102,11 @@ window.addEventListener('load' ,() =>{
                         iconoAnimado.src = 'animated/thunder.svg'
                         console.log('Atmosfera')
                         break;
+
+                    case '10d':
+                        iconoAnimado.src = 'animated/rainy-4.svg'
+                        console.log('Atmosfera')
+                        break;
                      
                             
                 }
