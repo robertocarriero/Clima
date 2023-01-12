@@ -69,24 +69,25 @@ window.addEventListener('load' ,() =>{
                         break;
                         
                     case '02d':
-                        iconoAnimado.src = 'animated/cloudy-day-3.svg'
+                        iconoAnimado.src = 'animated/cloudy-day-2.svg'
                         console.log('Nubes')
                         break;
                 
                     case '02n':
-                        iconoAnimado.src = 'animated/cloudy-night-3.svg'
-                        console.log('Tormenta')
+                        iconoAnimado.src = 'animated/cloudy-night-2.svg'
+                        console.log('nublado')
                         break;
 
                     case '03d':
                         iconoAnimado.src = 'animated/cloudy.svg'
-                        console.log('LLovizna')
+                        console.log('nublado')
                         break;
 
-                    case '09d':
-                        iconoAnimado.src = 'animated/rainy-4.svg'
-                        console.log('LLovizna')
-                        break;  
+                    case '03n':
+                        iconoAnimado.src = 'animated/cloudy.svg'
+                        console.log('nublado')
+                        break;
+
                         
                     case '13d':
                         iconoAnimado.src = 'animated/snowy-6.svg'
@@ -104,7 +105,17 @@ window.addEventListener('load' ,() =>{
                         break;
 
                     case '10d':
-                        iconoAnimado.src = 'animated/rainy-4.svg'
+                        iconoAnimado.src = 'animated/rainy-7.svg'
+                        console.log('Atmosfera')
+                        break;
+
+                    case '04d':
+                        iconoAnimado.src = 'animated/cloudy-day-3.svg'
+                        console.log('Atmosfera')
+                        break;
+                     
+                    case '04n':
+                        iconoAnimado.src = 'animated/cloudy-night-3.svg'
                         console.log('Atmosfera')
                         break;
                      
