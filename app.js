@@ -34,14 +34,14 @@ window.addEventListener('load' ,() =>{
                
                 //console.log(data.main.temp)
                 let temp = (data.main.temp)
-                temperaruraValor.textContent =`La temperatura actual : ${temp} °C`
+                temperaruraValor.textContent =`${temp} °C`
                 
 
                 let desc = data.weather[0].description
                 temperaturaDescripcion.textContent = desc.toUpperCase()
                 console.log(data.name)
 
-                ubicacion.textContent = `Usted se encuentra en : ${data.name}`
+                ubicacion.textContent = `Su ubicación: ${data.name}`
 
                 vientoVelocidad.textContent = `La velocidad del viento : ${data.wind.speed} m/seg`
 
@@ -143,7 +143,7 @@ function startTime() {
     //Add a zero in front of numbers<10
     min = checkTime(min);
     sec = checkTime(sec);
-    document.getElementById("clock").innerHTML = hr + " : " + min + " : " + sec;
+    document.getElementById("clock").innerHTML ="Hora actual:"  + " " + hr + " : " + min + " : " + sec;
     var time = setTimeout(function(){ startTime() }, 500);
 }
 function checkTime(i) {

@@ -6,9 +6,10 @@
 }
 
 body {
-    background: #20002c;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #cbb4d4, #20002c);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #cbb4d4, #20002c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /*background: #20002c;  /* fallback for old browsers */
+    /*background: -webkit-linear-gradient(to right, #cbb4d4, #20002c);  /* Chrome 10-25, Safari 5.1-6 */
+    /*background: linear-gradient(to right, #cbb4d4, #20002c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: rgb(107, 107, 243);
     height: 90vh;
     display: flex;
     justify-content: center;
@@ -22,37 +23,126 @@ body {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    text-align: center;
+    /*text-align: left;*/
+    align-items: center;
 }
 
 
 #caja1, #caja2, #caja3, #caja4, #caja5 {
+    /*font-weight: bold;
+    font-size: 15px;
+    color: white;
+    font-style: normal;*/
+    border: black;
+    /*background:  rgb(107, 107, 243);*/
+    background: #2193b0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-color: white;
+    border-style: groove;
+    border-width: 4px;
+    width: 120%;
+    
+
+} 
+#caja1{
+    margin-top: 25%;
+    /*background: rgb(153, 153, 247) ;*/
+    background: #2193b0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+    font-style: normal;
+
+}
+#temperarura-valor{
+    margin-left: 35%;
+    margin-top: 2%;
+}
+#temperatura-descripcion{
+    margin-left: 25%;
+    margin-bottom: 4%;
+}
+#icono-animado{
+    margin-left: 35%;
+}
+#caja2{
+    margin-top: 9%;
+    padding: 0.5%;
+    font-weight: bold;
+    font-size: 13px;
+    color: black;
+    font-style: normal;
+    text-align: center;
+   
+
+}
+#caja4{
+    margin-top: 9%;
+    padding: 0.5%;
+    font-weight: bold;
+    font-size: 13px;
+    color: black;
+    font-style: normal;
+    text-align: center;
+    
+}
+/*#caja4{
+    margin-top: 9%;
+    padding: 0.5%;
     font-weight: bold;
     font-size: 15px;
     color: white;
-    font-style: italic;
+    font-style: normal;
+}*/
+#caja5{
+    margin-top: 9%;
+    padding: 0.5%;
+    font-weight: bold;
+    font-size: 11px;
+    color: black;
+    font-style: normal;
+    text-align: center;
+    
+}
 
-} 
 
-.clockdate-wrapper {
-    background-color: #333;
-    padding:15px;
+/*.clockdate-wrapper {
+    /*background-color: #333;*/
+    /*background: #2193b0;  /* fallback for old browsers */
+    /*background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+    /*background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /*padding:15px;
     max-width:170px;
     width:100%;
     text-align:center;
     border-radius:5px;
     margin:0 auto;
     margin-top:15%;
-}
+}*/
 #clock{
-  background-color:#333;
-  font-family: sans-serif;
+  /*background-color:#333;*/
+  background: #2193b0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Roboto';
   font-size:20px;
-  text-shadow:0px 0px 1px #fff;
-  color:#fff;
+  /*text-shadow:0px 0px 1px #fff;*/
+  /*color:#fff;*/
+  color: black;
+  border: white;
+  border-style: groove;
+  border-width: 4px;
+  margin-top: 9%;
+  font-weight: bold;
+  font-size: 15px;
+
 }
 #clock span {
-    color:#888;
+    color: #888;
     text-shadow:0px 0px 1px #333;
     font-size:5px;
     position:relative;
@@ -63,7 +153,7 @@ body {
     letter-spacing:8px;
     font-size:6px;
     font-family:arial,sans-serif;
-    color:#fff;
+    color: black;
 }
 
 
