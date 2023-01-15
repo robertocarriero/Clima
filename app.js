@@ -26,6 +26,7 @@ window.addEventListener('load' ,() =>{
             lat = posicion.coords.latitude
 
             const url = `https://api.openweathermap.org/data/2.5/weather?units=metric&lat=${lat}&lon=${lon}&appid=244337e0301d76c4e7a92aa270dd0e2a&lang=es`
+            
            // console.log(url)
 
             fetch (url)
@@ -41,17 +42,17 @@ window.addEventListener('load' ,() =>{
                 temperaturaDescripcion.textContent = desc.toUpperCase()
                 console.log(data.name)
 
-                ubicacion.textContent = `Su ubicación: ${data.name}`
+                ubicacion.textContent = `Su ubicación : ${data.name}`
 
-                vientoVelocidad.textContent = `La velocidad del viento : ${data.wind.speed} m/seg`
+                vientoVelocidad.textContent = `Velocidad del viento : ${data.wind.speed} m/seg`
 
-                presion.textContent = `La presión atmosférica : ${data.main.pressure} hPa`
+                presion.textContent = `Presión atmosférica : ${data.main.pressure} hPa`
 
-                humedad.textContent = `La humedad actual : ${data.main.humidity} %`
+                humedad.textContent = `Humedad actual : ${data.main.humidity} %`
 
-                tempMax.textContent = `Temperatura máxima ${data.main.temp_max} °C`
+                tempMax.textContent = `Temperatura máxima : ${data.main.temp_max} °C`
 
-                tempMin.textContent = `Temperatura mínima ${data.main.temp_min} °C`
+                tempMin.textContent = `Temperatura mínima : ${data.main.temp_min} °C`
                 
                 
 
@@ -59,32 +60,32 @@ window.addEventListener('load' ,() =>{
                 console.log(data.weather[0].main)
                 switch (data.weather[0].icon){
                     case '01n' :
-                        iconoAnimado.src = 'animated/night.svg'
+                        iconoAnimado.src = 'animated/luna2.jpg'
                         console.log('Despejado')
                         break;
 
                     case '01d':
-                        iconoAnimado.src = 'animated/day.svg'
+                        iconoAnimado.src = 'animated/cieloClaro.jpg'
                         console.log('Despejado')
                         break;
                         
                     case '02d':
-                        iconoAnimado.src = 'animated/cloudy-day-2.svg'
+                        iconoAnimado.src = 'animated/algoNublado.jpg'
                         console.log('Nubes')
                         break;
                 
                     case '02n':
-                        iconoAnimado.src = 'animated/cloudy-night-2.svg'
+                        iconoAnimado.src = 'animated/nocheNublada.jpg'
                         console.log('nublado')
                         break;
 
                     case '03d':
-                        iconoAnimado.src = 'animated/cloudy.svg'
+                        iconoAnimado.src = 'animated/nublado.jpg'
                         console.log('nublado')
                         break;
 
                     case '03n':
-                        iconoAnimado.src = 'animated/cloudy.svg'
+                        iconoAnimado.src = 'animated/nocheNublada'
                         console.log('nublado')
                         break;
 
@@ -110,12 +111,12 @@ window.addEventListener('load' ,() =>{
                         break;
 
                     case '04d':
-                        iconoAnimado.src = 'animated/cloudy-day-3.svg'
+                        iconoAnimado.src = 'animated/nublado'
                         console.log('Atmosfera')
                         break;
                      
                     case '04n':
-                        iconoAnimado.src = 'animated/cloudy-night-3.svg'
+                        iconoAnimado.src = 'nocheNublada'
                         console.log('Atmosfera')
                         break;
                      
